@@ -158,7 +158,8 @@ function displayTen(){
 */
 function displayQuestion(theText, jparent){
   //$("#page").html(theText);
-  resulthtml = $(theText);
+  theText = theText.trim();
+  resulthtml = $($.parseHTML(theText));
   //console.log(theText);
   var temp = resulthtml.find(".post-text:first");
   if(temp.length > 0) {
