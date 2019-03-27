@@ -1,0 +1,41 @@
+/*! CSS Used from: https://cdn.sstatic.net/Shared/stacks.css?v=58428843e325 */
+div,span,p,pre,code{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline;}
+p{margin-top:0;}
+/*! CSS Used from: https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=698052c83444 */
+body *,body *:before,body *:after{box-sizing:inherit;}
+p{clear:both;margin-bottom:1em;margin-top:0;}
+code{font-family:Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;background-color:#eff0f1;}
+pre{margin-bottom:1em;padding:12px 8px;padding-bottom:20px !ie7;width:auto;width:650px !ie7;max-height:600px;overflow:auto;font-family:Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;font-size:13px;background-color:#eff0f1;border-radius:3px;}
+.post-text pre>code:first-child{max-height:600px\9;display:block\9;}
+pre{max-height:none\9;}
+.post-text{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;}
+.str,.lit{color:#7D2727;}
+.kwd{color:#101094;}
+.com{color:#858C93;}
+.typ{color:#2B91AF;}
+.pun,.pln{color:#303336;}
+.prettyprint{display:block;color:#393318;}
+@media print{
+.kwd,.typ{font-weight:bold;}
+.str{color:#060;}
+.kwd{color:#006;}
+.typ{color:#404;}
+.lit{color:#044;}
+.pun{color:#440;}
+.pln{color:#0C0D0E;}
+.com{color:#600;font-style:italic;}
+}
+.post-layout--right .post-text{width:100%;}
+.post-text{width:660px;}
+.post-text{margin-bottom:5px;word-wrap:break-word;font-size:15px;line-height:1.3;}
+.post-text pre{word-wrap:normal;}
+.post-text code{font-size:13px;}
+@media print{
+*{position:relative;}
+.post-text{float:none!important;width:100%;overflow:visible!important;}
+pre{max-height:none;display:block;width:600px;height:auto;overflow-x:auto;white-space:pre-wrap;word-wrap:break-word;clear:both;}
+code,pre{font-size:9pt!important;}
+.post-text{width:90%;}
+}
+code{white-space:pre-wrap;padding:1px 5px;}
+pre code{white-space:inherit;padding:0;}
