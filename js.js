@@ -88,7 +88,7 @@ function displayHTML(mytext){
 }
 /*
 * This function Displays 10 questions on the screen according to the user prefrences
-* whether he wants Most recent or Top rated.
+* Prefrences like Most recent or Top rated, hide duplicate, and hide answered.
 * It also hides the answered questions if the user wants to.
 */
 function displayTen(){
@@ -127,10 +127,19 @@ function displayTen(){
         var url = p2.find('a').attr('href');
         httpGetAsync('php.php?url='+encodeURIComponent(url), displayQuestion,p);
       });
+      if(document.getElementById('hideduplicate').checked){
+        var p = $(this).parent();
+        var p2 = p.parent();
+        var title = p2.find('a').text();
+        if(title.indexOf('[duplicate]') != -1){
+          var questiontag = p2.parent();
+          questiontag.css("display", "none");
+        }
+      }
     });
 
 
-  if(document.getElementById('myhide').checked) {
+  if(document.getElementById('hideanswered').checked) {
     console.log("Hide checked");
     var someele = $(".answered-accepted");
     someele.each(function(){
