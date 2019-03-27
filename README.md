@@ -11,8 +11,8 @@ If you don't have a server and want to run the tool localy then you should follo
 step 1. install a plugin to your browser that allows cross-domain requests to be sent directly from your browser.
 
 step 2. 
-change the line of code in js.js file  ```httpGetAsync('php.php?url='+encodeURIComponent(url), displayHTML);```
-to this ```httpGetAsync(encodeURIComponent(url), displayHTML);```
+Replace each occurrence of  ```httpGetAsync('php.php?url='+encodeURIComponent(url)```
+ in js.js file to this ```httpGetAsync(encodeURIComponent(url)```
 
 step 3. open stack.html in the browser.
 ## Usage
