@@ -172,7 +172,7 @@ function displayQuestion(theText, jparent){
 /*
 * In This function checks if this is the first search
 * Then it will calculates the date & call the function that fetches the pages
-* if not then it will check if the user changed the number of days or not
+* if not then it will check if the user changed either number of days or tag or not
 * if he did so it will calculates the date & call the function that fetches the pages
 * if not it will just update the page to user prefrences.
 */
